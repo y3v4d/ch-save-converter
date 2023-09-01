@@ -63,7 +63,7 @@ const App: Component = () => {
                         <header class={styles.output_header}>
                             <h2>OUTPUT</h2>
                         </header>
-                        <textarea class={styles.textarea} readOnly={true}>{convertedSave()?.encode()}</textarea>
+                        <textarea class={styles.textarea}>{convertedSave()?.encode()}</textarea>
                     </div>
                 </Show>
             </div>
