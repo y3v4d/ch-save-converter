@@ -1,0 +1,104 @@
+@import "node_modules/nord/src/sass/nord";
+
+.App {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header {
+    background-color: $nord1;
+
+    font-family: 'Yacimiento';
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 24px;
+}
+
+.logo {
+    max-width: 64px;
+}
+
+.container {
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: $nord2;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: 16px;
+}
+
+.input_header {
+    background-color: $nord11;
+    border-radius: 8px 8px 0px 0px;
+
+    text-align: left;
+    padding-left: 16px;
+}
+
+.output_header {
+    background-color: $nord14;
+    border-radius: 8px 8px 0px 0px;
+
+    text-align: left;
+    padding-left: 16px;
+}
+
+.input_input {
+    background-color: $nord4;
+    border-radius: 8px;
+    border: $nord1;
+
+    font-size: 20px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: $nord5;
+
+    padding: 0px 16px 16px 16px;
+}
+
+.settings_p {
+    margin: 0px;
+}
+
+.textarea {
+    min-height: 600px;
+
+    background: $nord4;
+    border-radius: 8px;
+
+    font-size: 20px;
+    resize: none;
+
+    padding: 16px;
+    margin: 16px;
+}
