@@ -13,16 +13,16 @@ const App: Component = () => {
 
         try {
             const parsed = new Save(save);
-            const targetPlatform = parsed.data.platform === SavePlatform.PC ? SavePlatform.MOBILE : SavePlatform.PC;
+            const targetPlatform = parsed.data.platform === SavePlatform.MOBILE ? SavePlatform.PC : SavePlatform.MOBILE;
 
             const converted = parsed.clone();
             converted.data.platform = targetPlatform;
             converted.data.saveOrigin = targetPlatform;
 
-            if(targetPlatform === SavePlatform.PC) {
-                converted.data.rubies = Math.floor(converted.data.rubies / 10);
-            } else {
+            if(targetPlatform === SavePlatform.MOBILE) {
                 converted.data.rubies = converted.data.rubies * 10;
+            } else {
+                converted.data.rubies = Math.floor(converted.data.rubies / 10);
             }
 
             setSave(parsed);
